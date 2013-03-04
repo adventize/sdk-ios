@@ -12,7 +12,7 @@ Archive with AdvertiserSDK contains `ExampleAdvertizer` project and `SDK_adv` di
 
 To integrate AdvertiserSDK in your app make following steps:
 
-1. Add all SDK_adv directory (containing libraries and other sources) to your project;
+1. Add all `SDK_adv` directory (containing libraries and other sources) to your project;
 2. Link these frameworks to your project: `CoreData`, `SystemConfiguration`;
 3. Add advertizer's class definition in your main header:
 
