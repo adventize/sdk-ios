@@ -21,10 +21,10 @@ To integrate AdvertiserSDK in your app make following steps:
 4. Start Adventize session in your main class, when your application starts:
 	
 		[AdventizeManager
-			startSessionWithAppId: @"{Your appId}"
-			secret: @"{Your secret}"];
+			startSessionWithAppId: @"Your appId"
+			secret: @"Your secret"];
 
-5. Stop adventize session before your application will terminate:
+5. Stop adventize session before your application will terminate. It is recommended to use `applicationDidEnterBackground` function.
 
 	    [AdventizeManager stopSession];
 
@@ -47,7 +47,7 @@ To integrate PublisherSDK in your app follow these steps:
 
 4. Add this to your main class to initialise sdk with your `appId` on start:
 
-	    [PublisherManager setAppId: @"{Your appId}"];
+	    [PublisherManager setAppId: @"Your appId"];
 
 5. Add class definitions to place, where you plan to call ad offerwall:
 
@@ -57,8 +57,9 @@ To integrate PublisherSDK in your app follow these steps:
 
 	    AdvViewController *offers = [[AdvViewController alloc] init];
 	    [self.navigationController pushViewController:offers animated:YES];
+	    [offers release];
 
-7. Stop publisher's session before your application will terminate:
+7. Stop publisher's session before your application will terminate. It is recommended to use `applicationDidEnterBackground` function.
 
 	    [PublisherManager stopSession];
 
