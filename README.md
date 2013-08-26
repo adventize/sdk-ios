@@ -10,7 +10,7 @@ Download AdvertiserSDK — `adventize-advertiser-ios-sdk.tar.gz`.
 Archive with AdvertiserSDK contains `ExampleAdvertizer` project and `SDK_adv` directory with two libraries for both ARM and x86 (simulator) architectures, `deps` — dependencies directory and `include` — sdk headers directory.
 
 To integrate AdvertiserSDK in your app make following steps:
-1. Add all `SDK_adv` directory (containing libs, deps and others) to your project. Remove libs and deps, which you have already had;
+1. Add all `SDK_adv` directory (containing libs, deps and others) to your project. Remove libs and deps, which you have already had (do not forget to remove all files, including headers!);
 2. Link these frameworks to your project: `CoreData`, `SystemConfiguration`, `AdSupport`;
 3. Include advertiser's header to class where you plan to report your app starting:
 
@@ -33,7 +33,7 @@ Archive with PublisherSDK also contains `ExamplePublisher` project and `SDK_pub`
 
 To integrate PublisherSDK in your app follow these steps:
 
-1. Add all SDK_pub directory (containing libraries, deps and include directories) to your project. Remove libs and deps, which you have already had;
+1. Add all SDK_pub directory (containing libraries, deps and include directories) to your project. Remove libs and deps, which you have already had (do not forget to remove all files, including headers!);
 2. Link these frameworks to your project: `CoreData`, `SystemConfiguration`, `AdSupport`
 3. Include main SDK header in class, where you plan to use sdk:
 
